@@ -87,30 +87,53 @@ b {
 	color: var(--sidebar-ink);
 }
 
-#header .profile-icons {
+#header .profile-links {
+	align-items: center;
 	display: flex;
-	gap: 0.82em;
+	flex-wrap: wrap;
+	gap: 0.22em 0;
 	justify-content: center;
-	margin: 0.7em 0 1.05em;
-}
-
-#header .profile-icons li {
+	list-style: none;
+	margin: 0.78em auto 1.05em;
+	max-width: 18em;
 	padding: 0;
 }
 
-#header .profile-icons .icon:before {
-	font-size: 1.22em;
+#header .profile-links li {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
 }
 
-#header .profile-icons a {
+#header .profile-links li + li::before {
+	color: rgba(101, 115, 124, 0.42);
+	content: "/";
+	font-size: 0.67em;
+	margin: 0 0.42em;
+}
+
+#header .profile-link {
+	align-items: center;
+	border-bottom: 0;
 	color: var(--accent);
+	display: inline-flex;
+	font-size: 0.68em;
+	gap: 0.3em;
+	line-height: 1.45;
+	white-space: nowrap;
 }
 
-#header .profile-icons a:hover {
+#header .profile-link .icon::before {
+	font-size: 0.9em;
+	min-width: 1.1em;
+	text-align: center;
+}
+
+#header a.profile-link:hover {
 	color: var(--accent-dark) !important;
 }
 
-#header .profile-icons .icon-disabled {
+#header .profile-link-disabled {
 	color: #abb4ba;
 	cursor: help;
 }
@@ -392,24 +415,6 @@ header.major h2 {
 	color: var(--accent);
 }
 
-.cv-icon {
-	position: relative;
-}
-
-.cv-badge {
-	background: #53636d;
-	border-radius: 2px;
-	bottom: -0.62em;
-	color: rgba(255, 255, 255, 0.8);
-	font-family: var(--font-sans);
-	font-size: 0.42em;
-	font-weight: 700;
-	line-height: 1;
-	padding: 0.14em 0.22em;
-	position: absolute;
-	right: -0.72em;
-}
-
 #footer .copyright {
 	color: #7b878e;
 	font-size: 0.6em;
@@ -498,7 +503,7 @@ header.major h2 {
 		grid-template-areas:
 			"avatar name"
 			"avatar role"
-			"avatar icons"
+			"avatar links"
 			"nav nav";
 		grid-template-columns: 5.4em minmax(0, 1fr);
 		margin: 0 auto 0.25em;
@@ -506,11 +511,11 @@ header.major h2 {
 		width: 100%;
 	}
 
-	#header .profile-icons {
-		grid-area: icons;
-		gap: 0.78em;
+	#header .profile-links {
+		grid-area: links;
 		justify-content: flex-start;
 		margin: 0.48em 0 0;
+		max-width: 31em;
 	}
 
 	#footer {
@@ -571,8 +576,7 @@ header.major h2 {
 		width: 5em;
 	}
 
-	#header .profile-icons {
-		gap: 0.72em;
+	#header .profile-links {
 		margin: 0.42em 0 0;
 	}
 
