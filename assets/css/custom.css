@@ -371,6 +371,10 @@ header.major h2 {
 	margin: 0 0 0.55em;
 }
 
+.service-group + .service-group {
+	margin-top: 1em;
+}
+
 .compact-list li {
 	color: #626a70;
 	font-size: 0.9em;
