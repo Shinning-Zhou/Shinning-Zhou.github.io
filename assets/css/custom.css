@@ -324,6 +324,16 @@ html {
 	margin-top: 0.4em;
 }
 
+.empty-state {
+	background: var(--surface);
+	border: 1px dashed #cfdad6;
+	border-radius: 0.55em;
+	color: var(--muted);
+	font-size: 0.9em;
+	margin: 0;
+	padding: 1.3em 1.5em;
+}
+
 .contact-panel {
 	align-items: center;
 	background: var(--surface);
