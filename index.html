@@ -6,90 +6,209 @@
 -->
 <html lang="en">
 	<head>
-		<title>Shinning Zhou</title>
+		<title>Xuanning Zhou | Academic Homepage</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Shinning Zhou's personal homepage." />
+		<meta name="description" content="Xuanning Zhou's academic homepage: research, publications, and selected projects." />
+		<meta name="author" content="Xuanning Zhou" />
 		<link rel="icon" href="images/avatar.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
 		<header id="header">
 			<div class="inner">
-				<a href="#main" class="image avatar"><img src="images/avatar.svg" alt="Shinning Zhou initials" /></a>
-				<h1><strong>Shinning Zhou</strong><br />
-				Personal homepage</h1>
+				<a href="#about" class="image avatar"><img src="images/avatar.svg" alt="Xuanning Zhou monogram" /></a>
+				<p class="eyebrow">Academic Homepage</p>
+				<h1><strong>Xuanning Zhou</strong><br />周炫宁</h1>
+				<p class="header-role">M.Phil. Student in Computer Science<br />The Chinese University of Hong Kong, Shenzhen</p>
+				<nav class="section-nav" aria-label="Section navigation">
+					<a href="#about">About</a>
+					<a href="#publications">Publications</a>
+					<a href="#experience">Experience</a>
+					<a href="#contact">Contact</a>
+				</nav>
 			</div>
 		</header>
 
-		<!-- Main -->
-		<div id="main">
+		<main id="main">
 
 			<section id="about">
 				<header class="major">
+					<p class="section-kicker">Hello</p>
 					<h2>About Me</h2>
 				</header>
-				<p>
-					Welcome to my personal homepage. I use this space to share my work,
-					projects, and recent updates.
+				<p class="lead">
+					I am an M.Phil. student in Computer Science at The Chinese University of Hong Kong, Shenzhen.
+					My research explores reliable machine learning and efficient foundation models, with current
+					interests spanning conformal prediction, uncertainty quantification, small language models,
+					and multimodal large language models.
 				</p>
-				<ul class="actions">
-					<li><a href="https://github.com/Shinning-Zhou" class="button" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+				<div class="profile-actions">
+					<a href="https://scholar.google.com/citations?user=Ftusa28AAAAJ&amp;hl=en" class="button primary" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+					<a href="https://github.com/Shinning-Zhou" class="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+				</div>
+
+				<div class="metric-grid" aria-label="Google Scholar metrics">
+					<div class="metric-card">
+						<strong>49</strong>
+						<span>Citations</span>
+					</div>
+					<div class="metric-card">
+						<strong>3</strong>
+						<span>h-index</span>
+					</div>
+					<div class="metric-card">
+						<strong>2</strong>
+						<span>i10-index</span>
+					</div>
+				</div>
+				<p class="data-note">Google Scholar metrics observed on September 4, 2026; counts may change over time.</p>
+
+				<h3>Research Interests</h3>
+				<ul class="tag-list" aria-label="Research interests">
+					<li>Conformal Prediction</li>
+					<li>Uncertainty Quantification</li>
+					<li>Small Language Models</li>
+					<li>Multimodal LLMs</li>
+					<li>Knowledge Fusion</li>
 				</ul>
 			</section>
 
 			<section id="news">
-				<h2>News</h2>
-				<ul class="alt">
-					<li><strong>September 2026</strong> &mdash; Personal homepage initialized.</li>
-				</ul>
-				<!-- Add future updates as new <li> items above. -->
+				<div class="section-heading">
+					<div>
+						<p class="section-kicker">Updates</p>
+						<h2>News</h2>
+					</div>
+				</div>
+				<div class="news-list">
+					<div class="news-item">
+						<time datetime="2026">2026</time>
+						<p><strong>SemiCP</strong> was accepted by CVPR 2026.</p>
+					</div>
+					<div class="news-item">
+						<time datetime="2026">2026</time>
+						<p><strong>Knowledge Fusion of Large Language Models via Modular SkillPacks</strong> was accepted by ICLR 2026.</p>
+					</div>
+					<div class="news-item">
+						<time datetime="2025">2025</time>
+						<p><strong>TorchCP</strong> was published in the Journal of Machine Learning Research.</p>
+					</div>
+				</div>
 			</section>
 
-			<section id="work">
-				<h2>Selected Work</h2>
-				<p>Projects and publications will be added here.</p>
-				<!--
-				Example entry:
-				<article>
-					<h3>Project or publication title</h3>
-					<p>One-sentence description.</p>
-					<ul class="actions small">
-						<li><a href="#" class="button small">Project</a></li>
-						<li><a href="#" class="button small">Code</a></li>
-					</ul>
+			<section id="publications">
+				<div class="section-heading">
+					<div>
+						<p class="section-kicker">Research</p>
+						<h2>Selected Publications</h2>
+					</div>
+					<a href="https://scholar.google.com/citations?user=Ftusa28AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">View Scholar profile</a>
+				</div>
+
+				<article class="publication-card featured">
+					<div class="publication-mark cp" aria-hidden="true">CP</div>
+					<div class="publication-content">
+						<div class="publication-topline"><span>CVPR 2026</span><span>First author</span><span>5 citations</span></div>
+						<h3>Semi-Supervised Conformal Prediction With Unlabeled Nonconformity Score</h3>
+						<p class="authors"><strong>Xuanning Zhou</strong>, Zihao Shi, Hao Zeng, Xiaobo Xia, Bingyi Jing, and Hongxin Wei</p>
+						<p>A semi-supervised conformal prediction method that uses unlabeled nonconformity scores to improve uncertainty quantification when labeled data are limited.</p>
+						<div class="publication-links">
+							<a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Semi-Supervised_Conformal_Prediction_With_Unlabeled_Nonconformity_Score_CVPR_2026_paper.html" target="_blank" rel="noopener noreferrer">Paper</a>
+							<a href="https://arxiv.org/abs/2505.21147" target="_blank" rel="noopener noreferrer">arXiv</a>
+							<a href="https://github.com/Shinning-Zhou/SemiCP" target="_blank" rel="noopener noreferrer">Code</a>
+						</div>
+					</div>
 				</article>
-				-->
+
+				<article class="publication-card">
+					<div class="publication-mark torch" aria-hidden="true">TCP</div>
+					<div class="publication-content">
+						<div class="publication-topline"><span>JMLR 2025</span><span>Open source</span><span>23 citations*</span></div>
+						<h3>TorchCP: A Python Library for Conformal Prediction</h3>
+						<p class="authors">Jianguo Huang, Jianqing Song, <strong>Xuanning Zhou</strong>, Bingyi Jing, and Hongxin Wei</p>
+						<p>An open-source Python toolbox offering a unified interface and implementations for major conformal prediction tasks.</p>
+						<div class="publication-links">
+							<a href="https://jmlr.org/papers/v26/24-2141.html" target="_blank" rel="noopener noreferrer">JMLR</a>
+							<a href="https://arxiv.org/abs/2402.12683" target="_blank" rel="noopener noreferrer">arXiv</a>
+							<a href="https://github.com/ml-stat-Sustech/TorchCP" target="_blank" rel="noopener noreferrer">Code</a>
+						</div>
+					</div>
+				</article>
+
+				<article class="publication-card">
+					<div class="publication-mark llm" aria-hidden="true">LLM</div>
+					<div class="publication-content">
+						<div class="publication-topline"><span>ICLR 2026</span><span>Language models</span><span>21 citations*</span></div>
+						<h3>Knowledge Fusion of Large Language Models via Modular SkillPacks</h3>
+						<p class="authors">Guodong Du, Zhuo Li, <strong>Xuanning Zhou</strong>, Junlin Li, Zesheng Shi, Wanyu Lin, Ho-Kin Tang, Xiucheng Li, Fangming Liu, Wenya Wang, Min Zhang, and Jing Li</p>
+						<p>A modular framework for combining specialized capabilities from multiple large language models into a target model.</p>
+						<div class="publication-links">
+							<a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/32ebb6b560ee58abbdae834e5f37cb5d-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">ICLR</a>
+							<a href="https://arxiv.org/abs/2505.18502" target="_blank" rel="noopener noreferrer">arXiv</a>
+							<a href="https://github.com/duguodong7/GraftLLM" target="_blank" rel="noopener noreferrer">Code</a>
+						</div>
+					</div>
+				</article>
+
+				<p class="data-note">Citation counts are from Google Scholar on September 4, 2026. An asterisk reproduces Scholar's merged-version indicator.</p>
+			</section>
+
+			<section id="experience">
+				<div class="section-heading">
+					<div>
+						<p class="section-kicker">Background</p>
+						<h2>Education &amp; Experience</h2>
+					</div>
+				</div>
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-date">2025 &ndash; 2027</div>
+						<div>
+							<h3>M.Phil. in Computer Science</h3>
+							<p>The Chinese University of Hong Kong, Shenzhen</p>
+						</div>
+					</div>
+					<div class="timeline-item">
+						<div class="timeline-date">2024 &ndash; 2025</div>
+						<div>
+							<h3>Research Intern</h3>
+							<p>Hongxin Wei's research group</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section id="contact">
-				<h2>Contact</h2>
-				<p>The best way to find my public work is through GitHub.</p>
-				<ul class="labeled-icons">
-					<li>
-						<h3 class="icon brands fa-github"><span class="label">GitHub</span></h3>
-						<a href="https://github.com/Shinning-Zhou" target="_blank" rel="noopener noreferrer">github.com/Shinning-Zhou</a>
-					</li>
-				</ul>
+				<div class="contact-panel">
+					<div>
+						<p class="section-kicker">Connect</p>
+						<h2>Find My Work</h2>
+						<p>My CUHK(SZ) affiliation is verified on Google Scholar. Follow the links for publications, code, and updates.</p>
+					</div>
+					<div class="contact-links">
+						<a href="https://scholar.google.com/citations?user=Ftusa28AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><span class="icon solid fa-graduation-cap" aria-hidden="true"></span>Google Scholar</a>
+						<a href="https://github.com/Shinning-Zhou" target="_blank" rel="noopener noreferrer"><span class="icon brands fa-github" aria-hidden="true"></span>GitHub</a>
+					</div>
+				</div>
 			</section>
 
-		</div>
+		</main>
 
-		<!-- Footer -->
 		<footer id="footer">
 			<div class="inner">
 				<ul class="icons">
+					<li><a href="https://scholar.google.com/citations?user=Ftusa28AAAAJ&amp;hl=en" class="icon solid fa-graduation-cap" target="_blank" rel="noopener noreferrer"><span class="label">Google Scholar</span></a></li>
 					<li><a href="https://github.com/Shinning-Zhou" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Shinning Zhou</li><li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
+					<li>&copy; 2026 Xuanning Zhou</li><li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li>
 				</ul>
 			</div>
 		</footer>
 
-		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
