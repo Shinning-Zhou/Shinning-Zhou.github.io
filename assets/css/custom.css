@@ -106,6 +106,8 @@ header.major h2 {
 }
 
 .news-list {
+	display: grid;
+	gap: 0.35em;
 	max-width: 53em;
 }
 
@@ -196,10 +198,10 @@ header.major h2 {
 }
 
 .compact-list {
-	list-style: none;
+	list-style: disc;
 	margin: 0;
 	max-width: 58em;
-	padding: 0;
+	padding-left: 1.2em;
 }
 
 .compact-list li {
@@ -207,17 +209,12 @@ header.major h2 {
 	font-size: 0.9em;
 	line-height: 1.5;
 	margin: 0.18em 0;
-	padding-left: 1.15em;
-	position: relative;
+	padding-left: 0.1em;
 }
 
-.compact-list li::before {
-	color: #596066;
-	content: '*';
-	font-weight: 700;
-	left: 0;
-	position: absolute;
-	top: 0;
+.compact-list li::marker {
+	color: #687279;
+	font-size: 0.85em;
 }
 
 #footer .icons {
