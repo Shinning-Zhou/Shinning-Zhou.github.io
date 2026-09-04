@@ -21,7 +21,7 @@ select,
 textarea {
 	color: #626a70;
 	font-family: var(--font-sans);
-	font-size: 14pt;
+	font-size: 13.5pt;
 	font-weight: 400;
 }
 
@@ -44,9 +44,9 @@ b {
 
 #header .image.avatar {
 	display: block;
-	height: 8.25em;
-	margin: 0 auto 1.35em;
-	width: 8.25em;
+	height: 7.35em;
+	margin: 0 auto 1em;
+	width: 7.35em;
 }
 
 #header .image.avatar img {
@@ -63,6 +63,7 @@ b {
 	font-weight: 600;
 	letter-spacing: 0.01em;
 	line-height: 1.35;
+	margin: 0;
 }
 
 #header h1 strong {
@@ -76,8 +77,8 @@ b {
 	font-size: 0.82em;
 	font-weight: 400;
 	letter-spacing: 0.012em;
-	line-height: 1.6;
-	margin: 1em 0 0;
+	line-height: 1.5;
+	margin: 0.6em 0 0;
 }
 
 #header .header-role span {
@@ -88,7 +89,7 @@ b {
 	display: flex;
 	gap: 0.95em;
 	justify-content: center;
-	margin: 1em 0 1.55em;
+	margin: 0.7em 0 1.05em;
 }
 
 #header .profile-icons li {
@@ -115,7 +116,7 @@ b {
 	gap: 0.08em;
 	margin: 0 auto;
 	max-width: 13em;
-	padding-top: 1em;
+	padding-top: 0.72em;
 }
 
 .section-nav a {
@@ -123,7 +124,7 @@ b {
 	color: var(--sidebar-muted);
 	font-size: 0.66em;
 	letter-spacing: 0.075em;
-	padding: 0.36em 0.55em;
+	padding: 0.28em 0.55em;
 	text-transform: uppercase;
 }
 
@@ -137,36 +138,36 @@ b {
 
 #main > section {
 	border-top-width: 1px;
-	margin-top: 2.75em;
-	padding-top: 2.75em;
+	margin-top: 1.75em;
+	padding-top: 1.75em;
 }
 
 #main h2 {
 	color: var(--section-heading);
 	font-family: var(--font-sans);
-	font-size: 1.6em;
+	font-size: 1.48em;
 	font-weight: 400;
 	letter-spacing: -0.012em;
 	line-height: 1.3;
-	margin-bottom: 0.8em;
+	margin-bottom: 0.58em;
 }
 
 header.major h2 {
-	font-size: 1.85em;
-	margin: 0.15em 0 0.45em;
+	font-size: 1.68em;
+	margin: 0.05em 0 0.32em;
 }
 
 .about-copy {
 	font-size: 0.86em;
-	line-height: 1.85;
-	margin-bottom: 2em;
-	max-width: 53em;
+	line-height: 1.72;
+	margin-bottom: 1.3em;
+	max-width: 58em;
 	text-align: left;
 }
 
 .about-copy p {
 	line-height: inherit;
-	margin: 0 0 0.85em;
+	margin: 0 0 0.62em;
 }
 
 .about-copy a {
@@ -190,45 +191,45 @@ header.major h2 {
 }
 
 #about > h2 {
-	margin-top: 1.25em;
+	margin-top: 0.8em;
 }
 
 .news-list {
 	display: grid;
-	gap: 0.18em;
-	max-width: 53em;
+	gap: 0.1em;
+	max-width: 58em;
 }
 
 .news-item {
 	display: grid;
 	font-size: 0.86em;
-	gap: 1.4em;
+	gap: 1.05em;
 	grid-template-columns: 6.2em 1fr;
-	line-height: 1.5;
+	line-height: 1.42;
 }
 
 .news-item time {
 	color: var(--accent);
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 1.42;
 	white-space: nowrap;
 }
 
 .news-item p {
-	line-height: 1.5;
+	line-height: 1.42;
 	margin: 0;
 }
 
 .publication-list {
 	display: grid;
-	gap: 1.65em;
+	gap: 1.05em;
 }
 
 .publication-item {
 	align-items: center;
 	display: grid;
-	gap: 1.25em;
-	grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+	gap: 1.05em;
+	grid-template-columns: minmax(12em, 0.82fr) minmax(0, 2.18fr);
 }
 
 .publication-media {
@@ -268,14 +269,14 @@ header.major h2 {
 	font-family: var(--font-sans);
 	font-size: 0.96em;
 	font-weight: 600;
-	line-height: 1.45;
-	margin: 0 0 0.35em;
+	line-height: 1.36;
+	margin: 0 0 0.24em;
 }
 
 .publication-copy p {
 	font-size: 0.79em;
-	line-height: 1.55;
-	margin: 0 0 0.25em;
+	line-height: 1.45;
+	margin: 0 0 0.16em;
 }
 
 .publication-copy .authors {
@@ -289,7 +290,7 @@ header.major h2 {
 
 .publication-copy .publication-links {
 	font-size: 0.75em;
-	margin-top: 0.45em;
+	margin-top: 0.3em;
 }
 
 .publication-links a {
@@ -341,8 +342,8 @@ header.major h2 {
 .compact-list li {
 	color: #626a70;
 	font-size: 0.9em;
-	line-height: 1.5;
-	margin: 0.18em 0;
+	line-height: 1.42;
+	margin: 0.08em 0;
 	padding-left: 0.1em;
 }
 
@@ -388,13 +389,13 @@ header.major h2 {
 	#header {
 		align-items: stretch;
 		overflow-y: auto;
-		padding: 4.25em 2.2em 2em;
+		padding: 3.35em 1.8em 1.25em;
 		width: 25%;
 	}
 
 	#footer {
 		margin-top: auto;
-		padding: 1.5em 0 0;
+		padding: 0.9em 0 0;
 		position: static;
 		text-align: center;
 		width: 100%;
@@ -402,7 +403,7 @@ header.major h2 {
 
 	#main {
 		margin-left: 25%;
-		padding: 6em;
+		padding: 4em 4.35em 3em;
 		width: 75%;
 	}
 }
@@ -416,7 +417,7 @@ header.major h2 {
 		height: auto;
 		justify-content: flex-start;
 		left: auto;
-		padding: 1.85em 1.5em 0.75em;
+		padding: 1.3em 1.5em 0.8em;
 		position: relative;
 		text-align: center;
 		top: auto;
@@ -424,24 +425,48 @@ header.major h2 {
 	}
 
 	#header .image.avatar {
-		height: 6.25em;
-		width: 6.25em;
+		grid-area: avatar;
+		height: 5.4em;
+		margin: 0;
+		width: 5.4em;
 	}
 
 	#header h1 {
-		font-size: 1.3em;
-		line-height: 1.45;
+		align-self: end;
+		font-size: 1.22em;
+		grid-area: name;
+		line-height: 1.35;
+		text-align: left;
 	}
 
 	#header .header-role {
-		font-size: 0.8em;
-		margin-top: 0.8em;
+		font-size: 0.76em;
+		grid-area: role;
+		line-height: 1.42;
+		margin-top: 0.2em;
+		text-align: left;
 	}
 
 	#header > .inner {
+		align-items: center;
+		column-gap: 1.25em;
+		display: grid;
 		flex-grow: 0;
-		margin-bottom: 0.7em;
+		grid-template-areas:
+			"avatar name"
+			"avatar role"
+			"avatar icons"
+			"nav nav";
+		grid-template-columns: 5.4em minmax(0, 1fr);
+		margin: 0 auto 0.25em;
+		max-width: 43em;
 		width: 100%;
+	}
+
+	#header .profile-icons {
+		grid-area: icons;
+		justify-content: flex-start;
+		margin: 0.48em 0 0;
 	}
 
 	#footer {
@@ -451,16 +476,19 @@ header.major h2 {
 	.section-nav {
 		flex-direction: row;
 		flex-wrap: wrap;
+		grid-area: nav;
 		gap: 0.2em 0.7em;
 		justify-content: center;
-		max-width: 34em;
+		margin-top: 0.65em;
+		max-width: none;
+		width: 100%;
 	}
 
 	#main {
 		font-size: 0.95em;
 		margin: 0;
 		max-width: none;
-		padding: 2em 1em;
+		padding: 1.55em 1.7em 0.5em;
 		width: 100%;
 	}
 
@@ -487,7 +515,7 @@ header.major h2 {
 
 @media screen and (max-width: 736px) {
 	#header {
-		padding: 1.5em 1.5em 0.6em;
+		padding: 1.15em 1.1em 0.65em;
 	}
 
 	#footer {
@@ -495,12 +523,18 @@ header.major h2 {
 	}
 
 	#header .image.avatar {
-		height: 5.75em;
-		width: 5.75em;
+		height: 5em;
+		width: 5em;
 	}
 
 	#header .profile-icons {
-		margin: 0.8em 0 1.15em;
+		gap: 0.8em;
+		margin: 0.42em 0 0;
+	}
+
+	#header > .inner {
+		column-gap: 1em;
+		grid-template-columns: 5em minmax(0, 1fr);
 	}
 
 	.section-nav a {
@@ -508,12 +542,12 @@ header.major h2 {
 	}
 
 	#main {
-		padding: 2em 1em 0.25em 1.5em;
+		padding: 1.4em 1em 0.25em 1.25em;
 	}
 
 	#main > section {
-		margin-top: 1.85em;
-		padding-top: 1.85em;
+		margin-top: 1.35em;
+		padding-top: 1.35em;
 	}
 
 	#main h2 {
