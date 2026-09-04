@@ -79,7 +79,7 @@ header.major h2 {
 	margin: 0.15em 0 0.45em;
 }
 
-.about-justify {
+.about-copy {
 	font-size: 0.86em;
 	line-height: 1.85;
 	margin-bottom: 2em;
@@ -87,8 +87,19 @@ header.major h2 {
 	text-align: left;
 }
 
-.about-justify a {
+.about-copy p {
+	line-height: inherit;
+	margin: 0 0 0.85em;
+}
+
+.about-copy a {
 	font-weight: 400;
+}
+
+.about-copy .opportunity-note {
+	color: #bd4d4d;
+	font-weight: 400;
+	margin-bottom: 0;
 }
 
 #main a {

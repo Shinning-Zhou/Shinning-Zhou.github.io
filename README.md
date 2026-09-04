@@ -1,15 +1,20 @@
 # Xuanning Zhou · 周炫宁
 
-I am an M.Phil. student at The Chinese University of Hong Kong, Shenzhen, advised by
-[Prof. Benyou Wang](https://wabyking.github.io/) and [Prof. Tom Ko](https://tomkocse.github.io/).
-Prior to this, I received my bachelor's degree from Harbin Institute of Technology,
-Shenzhen in 2025, where I was advised by
+I am currently a second-year M.Phil. student at The Chinese University of Hong Kong,
+Shenzhen, co-advised by [Prof. Benyou Wang](https://wabyking.github.io/) and
+[Prof. Tom Ko](https://tomkocse.github.io/). Prior to this, I received my bachelor's
+degree in Data Science and Big Data Technology from the Department of Mathematics at
+Harbin Institute of Technology, Shenzhen, in 2025, advised by
 [Prof. Haojian Deng](https://scholar.hit.edu.cn/persons/haojian-deng) and
 [Prof. Jing Li](https://www.li-jing.com/).
 
-My research focuses on multimodality and trustworthy AI, with particular interests
-in multimodal large language models, small language models, conformal prediction,
-and uncertainty quantification.
+I was also fortunate to work as a research assistant at Southern University of Science
+and Technology (SUSTech), supervised by Prof. Hongxin Wei and Prof. Bingyi Jing.
+
+My research interests focus on multimodal understanding and generation. I am always
+open to collaboration, so please feel free to reach out.
+
+**I am currently seeking Ph.D. opportunities for Fall 2027 and research internship positions.**
 
 ## Links
 
