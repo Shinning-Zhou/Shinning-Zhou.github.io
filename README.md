@@ -32,7 +32,7 @@ and uncertainty quantification.
 - First Prize in the China Undergraduate Mathematical Contest in Modeling
 - Third Prize in the Chinese Mathematics Competition
 
-## Service
+## Teaching Assistant
 
 - ORCA2500: Foundations of Data Science, in CUHKSZ, 26Summer
 - STA3020: Statistical Inference, in CUHKSZ, 26Spring
