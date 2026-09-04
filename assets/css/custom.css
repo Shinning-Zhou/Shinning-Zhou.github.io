@@ -230,6 +230,23 @@ header.major h2 {
 	content: ']';
 }
 
+.publication-links .star-badge {
+	display: inline-flex;
+	margin-left: 0.05em;
+	vertical-align: -0.28em;
+}
+
+.publication-links .star-badge::before,
+.publication-links .star-badge::after {
+	content: none;
+}
+
+.publication-links .star-badge img {
+	display: block;
+	height: 1.45em;
+	width: auto;
+}
+
 .compact-list {
 	list-style: disc;
 	margin: 0;
