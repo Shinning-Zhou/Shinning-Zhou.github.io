@@ -9,6 +9,7 @@
 	--sidebar-muted: #65737c;
 	--line: #eeeeee;
 	--font-sans: "Avenir Next", Avenir, "SF Pro Text", "Helvetica Neue", sans-serif;
+	--font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
 }
 
 html {
@@ -44,9 +45,9 @@ b {
 
 #header .image.avatar {
 	display: block;
-	height: 7.35em;
-	margin: 0 auto 1em;
-	width: 7.35em;
+	height: 11.3em;
+	margin: 0 auto 1.35em;
+	width: 11.3em;
 }
 
 #header .image.avatar img {
@@ -58,10 +59,10 @@ b {
 
 #header h1 {
 	color: var(--sidebar-ink);
-	font-family: var(--font-sans);
-	font-size: 1.45em;
+	font-family: var(--font-display);
+	font-size: 1.55em;
 	font-weight: 600;
-	letter-spacing: 0.01em;
+	letter-spacing: -0.015em;
 	line-height: 1.35;
 	margin: 0;
 }
@@ -87,13 +88,17 @@ b {
 
 #header .profile-icons {
 	display: flex;
-	gap: 0.95em;
+	gap: 0.82em;
 	justify-content: center;
 	margin: 0.7em 0 1.05em;
 }
 
 #header .profile-icons li {
 	padding: 0;
+}
+
+#header .profile-icons .icon:before {
+	font-size: 1.22em;
 }
 
 #header .profile-icons a {
@@ -133,7 +138,7 @@ b {
 }
 
 #main {
-	max-width: 65em;
+	max-width: none;
 }
 
 #main > section {
@@ -161,7 +166,7 @@ header.major h2 {
 	font-size: 0.86em;
 	line-height: 1.72;
 	margin-bottom: 1.3em;
-	max-width: 58em;
+	max-width: 62em;
 	text-align: left;
 }
 
@@ -197,7 +202,7 @@ header.major h2 {
 .news-list {
 	display: grid;
 	gap: 0.1em;
-	max-width: 58em;
+	max-width: 62em;
 }
 
 .news-item {
@@ -403,6 +408,13 @@ header.major h2 {
 		width: 25%;
 	}
 
+	#header > .inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+	}
+
 	#footer {
 		margin-top: auto;
 		padding: 0.9em 0 0;
@@ -443,7 +455,7 @@ header.major h2 {
 
 	#header h1 {
 		align-self: end;
-		font-size: 1.22em;
+		font-size: 1.28em;
 		grid-area: name;
 		line-height: 1.35;
 		text-align: left;
@@ -475,6 +487,7 @@ header.major h2 {
 
 	#header .profile-icons {
 		grid-area: icons;
+		gap: 0.78em;
 		justify-content: flex-start;
 		margin: 0.48em 0 0;
 	}
@@ -538,7 +551,7 @@ header.major h2 {
 	}
 
 	#header .profile-icons {
-		gap: 0.8em;
+		gap: 0.72em;
 		margin: 0.42em 0 0;
 	}
 
