@@ -11,6 +11,7 @@ language models, and multimodal large language models.
 
 ## Links
 
+- [Email](mailto:shinning_zhou@163.com)
 - [Academic homepage](https://shinning-zhou.github.io/Shinning-Zhou/)
 - [Google Scholar](https://scholar.google.com/citations?user=Ftusa28AAAAJ&hl=en)
 - [GitHub](https://github.com/Shinning-Zhou)
