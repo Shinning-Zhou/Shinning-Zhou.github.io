@@ -339,6 +339,16 @@ header.major h2 {
 	padding-left: 1.2em;
 }
 
+.service-subheading {
+	color: var(--ink);
+	font-family: var(--font-sans);
+	font-size: 0.98em;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.4;
+	margin: 0 0 0.55em;
+}
+
 .compact-list li {
 	color: #626a70;
 	font-size: 0.9em;
