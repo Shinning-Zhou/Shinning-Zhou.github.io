@@ -8,6 +8,7 @@
 	--sidebar-ink: #394852;
 	--sidebar-muted: #65737c;
 	--line: #eeeeee;
+	--content-measure: 60rem;
 	--font-sans: "Avenir Next", Avenir, "SF Pro Text", "Helvetica Neue", sans-serif;
 	--font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
 }
@@ -166,7 +167,7 @@ header.major h2 {
 	font-size: 0.86em;
 	line-height: 1.72;
 	margin-bottom: 1.3em;
-	max-width: 62em;
+	max-width: var(--content-measure);
 	text-align: left;
 }
 
@@ -202,7 +203,7 @@ header.major h2 {
 .news-list {
 	display: grid;
 	gap: 0.1em;
-	max-width: 62em;
+	max-width: var(--content-measure);
 }
 
 .news-item {
@@ -228,6 +229,9 @@ header.major h2 {
 .publication-list {
 	display: grid;
 	gap: 1.05em;
+	max-width: var(--content-measure);
+	min-width: 0;
+	width: 100%;
 }
 
 .publication-item {
@@ -235,10 +239,17 @@ header.major h2 {
 	display: grid;
 	gap: 1.05em;
 	grid-template-columns: minmax(12em, 0.82fr) minmax(0, 2.18fr);
+	min-width: 0;
+	width: 100%;
 }
 
 .publication-media {
+	min-width: 0;
 	position: relative;
+}
+
+.publication-copy {
+	min-width: 0;
 }
 
 .publication-image {
@@ -276,12 +287,18 @@ header.major h2 {
 	font-weight: 600;
 	line-height: 1.36;
 	margin: 0 0 0.24em;
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-break: normal;
 }
 
 .publication-copy p {
 	font-size: 0.79em;
 	line-height: 1.45;
 	margin: 0 0 0.16em;
+	max-width: 100%;
+	overflow-wrap: anywhere;
+	word-break: normal;
 }
 
 .publication-copy .authors {
