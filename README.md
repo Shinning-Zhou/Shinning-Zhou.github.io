@@ -27,6 +27,7 @@ open to collaboration, so please feel free to reach out.
 
 ## Selected Papers
 
+- ***What Did I Just Say?* Self-Listening for Full-Duplex Speech Models.** Preprint. arXiv coming soon.
 - **Semi-Supervised Conformal Prediction With Unlabeled Nonconformity Score.** CVPR 2026. [arXiv](https://arxiv.org/abs/2505.21147) · [Code](https://github.com/Shinning-Zhou/SemiCP)
 - **Knowledge Fusion of Large Language Models via Modular SkillPacks.** ICLR 2026. [arXiv](https://arxiv.org/abs/2505.18502v3) · [Code](https://github.com/duguodong7/GraftLLM)
 - **TorchCP: A Python Library for Conformal Prediction.** JMLR 2025. [Page](https://torchcp.readthedocs.io/en/latest/) · [arXiv](https://arxiv.org/abs/2402.12683) · [Code](https://github.com/ml-stat-Sustech/TorchCP)
