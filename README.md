@@ -1,13 +1,13 @@
 # Xuanning Zhou · 周炫宁
 
-I am a second-year M.Phil. student at The Chinese University of Hong Kong, Shenzhen
+I am an MPhil student at The Chinese University of Hong Kong, Shenzhen
 (CUHK-Shenzhen), advised by Prof. Benyou Wang and Prof. Tom Ko. Prior to this,
 I received my bachelor's degree from Harbin Institute of Technology, Shenzhen in
 2025, where I was advised by Prof. Haojian Deng and Prof. Jing Li.
 
-My research focuses on reliable machine learning and foundation models, with
-particular interests in conformal prediction, uncertainty quantification, small
-language models, and multimodal large language models.
+My research focuses on multimodality and trustworthy AI, with particular interests
+in multimodal large language models, small language models, conformal prediction,
+and uncertainty quantification.
 
 ## Links
 

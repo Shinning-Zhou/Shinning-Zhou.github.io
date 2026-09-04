@@ -9,8 +9,6 @@
 	var $window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
-		$footer = $('#footer'),
-		$main = $('#main'),
 		settings = {
 
 			// Parallax background effect?
@@ -50,20 +48,11 @@
 
 		}
 
-	// Footer.
-		breakpoints.on('<=medium', function() {
-			$footer.insertAfter($main);
-		});
-
-		breakpoints.on('>medium', function() {
-			$footer.appendTo($header);
-		});
-
 	// Header.
 
 		// Parallax background.
 
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+			// Disable parallax on IE (smooth scrolling is jerky) and mobile platforms.
 				if (browser.name == 'ie'
 				||	browser.mobile)
 					settings.parallax = false;
