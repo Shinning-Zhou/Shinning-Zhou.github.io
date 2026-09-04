@@ -18,9 +18,9 @@ and uncertainty quantification.
 
 ## Selected Publications
 
-- **Semi-Supervised Conformal Prediction With Unlabeled Nonconformity Score.** CVPR 2026. [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Semi-Supervised_Conformal_Prediction_With_Unlabeled_Nonconformity_Score_CVPR_2026_paper.html) · [Code](https://github.com/Shinning-Zhou/SemiCP)
-- **TorchCP: A Python Library for Conformal Prediction.** JMLR 2025. [Paper](https://jmlr.org/papers/v26/24-2141.html) · [Code](https://github.com/ml-stat-Sustech/TorchCP)
-- **Knowledge Fusion of Large Language Models via Modular SkillPacks.** ICLR 2026. [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/32ebb6b560ee58abbdae834e5f37cb5d-Abstract-Conference.html) · [Code](https://github.com/duguodong7/GraftLLM)
+- **Semi-Supervised Conformal Prediction With Unlabeled Nonconformity Score.** CVPR 2026. [arXiv](https://arxiv.org/abs/2505.21147) · [Code](https://github.com/Shinning-Zhou/SemiCP)
+- **Knowledge Fusion of Large Language Models via Modular SkillPacks.** ICLR 2026. [arXiv](https://arxiv.org/abs/2505.18502v3) · [Code](https://github.com/duguodong7/GraftLLM)
+- **TorchCP: A Python Library for Conformal Prediction.** JMLR 2025. [Page](https://torchcp.readthedocs.io/en/latest/) · [arXiv](https://arxiv.org/abs/2402.12683) · [Code](https://github.com/ml-stat-Sustech/TorchCP)
 
 ## Awards & Honors
 
