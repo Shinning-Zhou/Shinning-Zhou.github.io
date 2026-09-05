@@ -14,7 +14,7 @@
 		<link rel="icon" href="images/github-avatar.jpg?v=1" type="image/jpeg" />
 		<link rel="apple-touch-icon" href="images/github-avatar.jpg?v=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css?v=38" />
+		<link rel="stylesheet" href="assets/css/custom.css?v=41" />
 	</head>
 	<body class="is-preload">
 
@@ -40,9 +40,9 @@
 						</a>
 					</li>
 					<li>
-						<a href="images/wechat.jpg" class="profile-link" target="_blank" rel="noopener noreferrer" aria-label="Open Xuanning Zhou's WeChat QR code">
+						<button type="button" class="profile-link wechat-trigger" aria-haspopup="dialog" aria-controls="wechat-dialog" aria-label="Open Xuanning Zhou's WeChat QR code">
 							<span class="icon brands fa-weixin" aria-hidden="true"></span><span>WeChat</span>
-						</a>
+						</button>
 					</li>
 					<li>
 						<span class="profile-link profile-link-disabled" aria-label="English CV coming soon" title="English CV — coming soon">
@@ -292,12 +292,20 @@
 
 		</main>
 
+		<dialog class="wechat-dialog" id="wechat-dialog" aria-label="Xuanning Zhou's WeChat QR code">
+			<button class="wechat-close" type="button" aria-label="Close WeChat QR code">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<img src="images/wechat.jpg" alt="WeChat QR code for Xuanning Zhou" />
+		</dialog>
+
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js?v=2"></script>
+		<script src="assets/js/custom.js?v=1"></script>
 
 	</body>
 </html>

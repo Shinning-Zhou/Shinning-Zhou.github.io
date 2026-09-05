@@ -10,6 +10,7 @@
 	--sidebar-link: #ffffff;
 	--sidebar-link-hover: #d6f1ff;
 	--line: #eeeeee;
+	--timeline-school: #245a83;
 	--content-measure: 60rem;
 	--font-sans: "Avenir Next", Avenir, "SF Pro Text", "Helvetica Neue", sans-serif;
 	--font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
@@ -156,6 +157,23 @@ b {
 }
 
 #header a.profile-link:hover {
+	color: var(--sidebar-link-hover) !important;
+}
+
+#header button.profile-link {
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	border: 0;
+	box-shadow: none;
+	cursor: pointer;
+	font-family: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+#header button.profile-link:hover,
+#header button.profile-link:focus-visible {
 	color: var(--sidebar-link-hover) !important;
 }
 
@@ -343,7 +361,7 @@ header.major h2 {
 }
 
 .timeline-content h3 {
-	color: var(--accent-dark);
+	color: var(--timeline-school);
 	font-family: var(--font-sans);
 	font-size: 0.9em;
 	font-weight: 400;
@@ -588,6 +606,86 @@ header.major h2 {
 	display: none;
 }
 
+body.wechat-dialog-open {
+	overflow: hidden;
+}
+
+.wechat-dialog {
+	background: #ffffff;
+	border: 0;
+	border-radius: 0.75em;
+	box-shadow: 0 1.4em 4.5em rgba(7, 31, 49, 0.32);
+	box-sizing: border-box;
+	max-height: calc(100dvh - 2em);
+	max-width: calc(100vw - 2em);
+	overflow: hidden;
+	padding: 0;
+	width: min(24em, calc(100vw - 2em));
+}
+
+.wechat-dialog[open] {
+	animation: wechat-dialog-in 180ms ease-out;
+}
+
+.wechat-dialog::backdrop {
+	background: rgba(7, 25, 39, 0.58);
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+}
+
+.wechat-dialog img {
+	display: block;
+	height: auto;
+	max-height: calc(100dvh - 2em);
+	object-fit: contain;
+	width: 100%;
+}
+
+.wechat-close {
+	-webkit-appearance: none;
+	appearance: none;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.94);
+	border: 0;
+	border-radius: 50%;
+	box-shadow: 0 0.15em 0.7em rgba(7, 31, 49, 0.18);
+	color: #233746;
+	cursor: pointer;
+	display: flex;
+	font-family: var(--font-sans);
+	font-size: 1.35em;
+	height: 1.85em;
+	justify-content: center;
+	line-height: 1;
+	margin: 0;
+	padding: 0 0 0.08em;
+	position: absolute;
+	right: 0.65em;
+	top: 0.65em;
+	transition: background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+	width: 1.85em;
+	z-index: 1;
+}
+
+.wechat-close:hover,
+.wechat-close:focus-visible {
+	background: #ffffff;
+	box-shadow: 0 0.2em 0.9em rgba(7, 31, 49, 0.24);
+	transform: scale(1.04);
+}
+
+@keyframes wechat-dialog-in {
+	from {
+		opacity: 0;
+		transform: translateY(0.6em) scale(0.98);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
 @media screen and (min-width: 1043px) {
 	#header {
 		align-items: stretch;
@@ -806,6 +904,12 @@ header.major h2 {
 
 	.publication-copy p {
 		font-size: 0.75em;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.wechat-dialog[open] {
+		animation: none;
 	}
 }
 
