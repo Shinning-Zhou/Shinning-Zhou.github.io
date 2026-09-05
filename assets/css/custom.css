@@ -4,9 +4,11 @@
 	--ink: #34383b;
 	--muted: #6f767b;
 	--section-heading: #59666f;
-	--sidebar-bg: #edf1f4;
-	--sidebar-ink: #394852;
-	--sidebar-muted: #65737c;
+	--sidebar-bg: #07557f;
+	--sidebar-ink: #ffffff;
+	--sidebar-muted: rgba(246, 250, 255, 0.88);
+	--sidebar-link: #ffffff;
+	--sidebar-link-hover: #d6f1ff;
 	--line: #eeeeee;
 	--content-measure: 60rem;
 	--font-sans: "Avenir Next", Avenir, "SF Pro Text", "Helvetica Neue", sans-serif;
@@ -37,7 +39,30 @@ b {
 	background-color: var(--sidebar-bg);
 	background-image: none;
 	color: var(--sidebar-muted);
+	isolation: isolate;
+	overflow: hidden;
 	text-align: center;
+}
+
+#header::before {
+	background-image:
+		linear-gradient(180deg, rgba(3, 28, 52, 0.12) 0%, rgba(3, 33, 60, 0.27) 52%, rgba(2, 25, 48, 0.45) 100%),
+		url("../../images/background/blue.png");
+	background-position: 48% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	filter: saturate(0.88) contrast(1.04) brightness(1.04);
+	inset: 0;
+	pointer-events: none;
+	position: absolute;
+	z-index: 0;
+}
+
+#header > .inner,
+#header > #footer {
+	position: relative;
+	z-index: 1;
 }
 
 #header > .inner {
@@ -46,13 +71,14 @@ b {
 
 #header .image.avatar {
 	display: block;
-	height: 11.3em;
-	margin: 0 auto 1.35em;
-	width: 11.3em;
+	height: 9em;
+	margin: 0 auto 1.2em;
+	width: 9em;
 }
 
 #header .image.avatar img {
-	box-shadow: 0 0.35em 1.2em rgba(56, 72, 82, 0.13);
+	border: 1.25px solid rgba(2, 28, 50, 0.78);
+	box-shadow: 0 0.55em 1.6em rgba(0, 28, 52, 0.3);
 	height: 100%;
 	object-fit: cover;
 	object-position: center 45%;
@@ -106,7 +132,7 @@ b {
 }
 
 #header .profile-links li + li::before {
-	color: rgba(101, 115, 124, 0.42);
+	color: rgba(255, 255, 255, 0.5);
 	content: "/";
 	font-size: 0.67em;
 	margin: 0 0.42em;
@@ -115,7 +141,7 @@ b {
 #header .profile-link {
 	align-items: center;
 	border-bottom: 0;
-	color: var(--accent);
+	color: var(--sidebar-link);
 	display: inline-flex;
 	font-size: 0.68em;
 	gap: 0.3em;
@@ -130,16 +156,16 @@ b {
 }
 
 #header a.profile-link:hover {
-	color: var(--accent-dark) !important;
+	color: var(--sidebar-link-hover) !important;
 }
 
 #header .profile-link-disabled {
-	color: #abb4ba;
+	color: rgba(255, 255, 255, 0.58);
 	cursor: help;
 }
 
 .section-nav {
-	border-top: 1px solid rgba(89, 102, 111, 0.17);
+	border-top: 1px solid rgba(255, 255, 255, 0.24);
 	display: flex;
 	flex-direction: column;
 	gap: 0.08em;
@@ -158,7 +184,7 @@ b {
 }
 
 .section-nav a:hover {
-	color: var(--accent-dark) !important;
+	color: var(--sidebar-link-hover) !important;
 }
 
 #main {
@@ -255,6 +281,34 @@ header.major h2 {
 	max-width: var(--content-measure);
 	min-width: 0;
 	width: 100%;
+}
+
+.author-key {
+	color: var(--ink);
+	font-size: 0.72em;
+	line-height: 1.4;
+	margin: -0.45em 0 1em;
+	white-space: nowrap;
+}
+
+.author-mark {
+	color: var(--ink);
+	font-size: 1em;
+	font-weight: 500;
+	margin-left: 0.04em;
+	vertical-align: baseline;
+}
+
+.publication-copy .authors .author-mark {
+	display: inline-block;
+	font-size: 0.78em;
+	line-height: 1;
+	position: relative;
+	top: -0.3em;
+}
+
+.author-key .author-mark:first-child {
+	margin-left: 0;
 }
 
 .publication-item {
@@ -412,14 +466,22 @@ header.major h2 {
 }
 
 #footer .copyright li a {
-	color: var(--accent);
+	color: var(--sidebar-link);
 }
 
 #footer .copyright {
-	color: #7b878e;
+	color: rgba(246, 250, 255, 0.76);
 	font-size: 0.6em;
 	line-height: 1.6;
 	text-align: center;
+}
+
+#header h1,
+#header .header-role,
+#header .profile-links,
+#header .section-nav,
+#header #footer {
+	text-shadow: 0 1px 10px rgba(0, 25, 47, 0.28);
 }
 
 .page-end-copyright {
@@ -429,7 +491,7 @@ header.major h2 {
 @media screen and (min-width: 1043px) {
 	#header {
 		align-items: stretch;
-		overflow-y: auto;
+		overflow: hidden;
 		padding: 3.35em 1.8em 1.25em;
 		width: 25%;
 	}
@@ -474,9 +536,9 @@ header.major h2 {
 
 	#header .image.avatar {
 		grid-area: avatar;
-		height: 5.4em;
+		height: 4.35em;
 		margin: 0;
-		width: 5.4em;
+		width: 4.35em;
 	}
 
 	#header h1 {
@@ -505,7 +567,7 @@ header.major h2 {
 			"avatar role"
 			"avatar links"
 			"nav nav";
-		grid-template-columns: 5.4em minmax(0, 1fr);
+		grid-template-columns: 4.35em minmax(0, 1fr);
 		margin: 0 auto 0.25em;
 		max-width: 43em;
 		width: 100%;
@@ -572,8 +634,8 @@ header.major h2 {
 	}
 
 	#header .image.avatar {
-		height: 5em;
-		width: 5em;
+		height: 4em;
+		width: 4em;
 	}
 
 	#header .profile-links {
@@ -582,7 +644,7 @@ header.major h2 {
 
 	#header > .inner {
 		column-gap: 1em;
-		grid-template-columns: 5em minmax(0, 1fr);
+		grid-template-columns: 4em minmax(0, 1fr);
 	}
 
 	.section-nav a {
